@@ -1,9 +1,14 @@
-// src/App.js
+import React from 'react';
+import Navbar from './components/navbar/navbar';
+import Hero from './components/hero/hero';
+
 function App() {
   return (
-    <div className="text-3xl font-bold underline text-red-600">
-      Hello Tailwind!
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
+      <Hero />
+      {/* Weitere Komponenten */}
     </div>
   );
 }
+
 export default App;
