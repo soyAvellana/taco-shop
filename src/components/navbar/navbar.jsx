@@ -15,7 +15,7 @@ function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="bg-amber-300 border-gray-200 dark:bg-gray-900">
+    <nav className="bg-amber-200 border-gray-200 dark:bg-gray-900">
       <div className="flex items-center justify-between w-full p-4">
         
         {/* Logo */}
