@@ -1,35 +1,79 @@
-import TeamFoto from '../../assets/img/TeamfotoTransparent.png';
-import AbyPortrait from '../../assets/img/Aby_Potrait.png';
-import ProfileCard from './ProfileCard';
+import ProfileCard from "./ProfileCard";
+import Abigail from "../../assets/img/Aby_Potrait.png";
+import Aykut from "../../assets/img/Aykut_Portrait.png";
+import Juan from "../../assets/img/Juan_Portrait.png";
+import Lisa from "../../assets/img/Lisa_Portrait.png";
+import Kadir from "../../assets/img/Kadir_Portrait.png";
 
-function Team() {
+function TeamGrid() {
+const teamMembers = [
+  {
+    title: "Doña Aby",
+    subtitle: "CEO & Founder",
+    description: "The heart and soul of Aby's Tacos — passionate about authentic flavors and bringing people together.",
+    bgColor: "bg-red-500",
+    textColor: "text-yellow-100",
+    image: Abigail
+  },
+  {
+    title: "Aykut Yildiz",
+    subtitle: "Head of Operations",
+    description: "Keeps the taco shop running like clockwork — logistics, planning and making sure nothing burns.",
+    bgColor: "bg-green-500",
+    textColor: "text-white",
+    image: Aykut
+  },
+  {
+    title: "Juan Martínez",
+    subtitle: "Master of Salsas",
+    description: "Known for his secret spicy recipes — if it burns, Juan made it. Fresh ingredients, bold flavors.",
+    bgColor: "bg-orange-500",
+    textColor: "text-yellow-100",
+    image: Juan
+  },
+  {
+    title: "Lisa Meier",
+    subtitle: "Marketing & Design",
+    description: "Brings the brand to life — from creative campaigns to making sure the tacos look as good as they taste.",
+    bgColor: "bg-pink-500",
+    textColor: "text-white",
+    image: Lisa
+  },
+  {
+    title: "Kadir Demir",
+    subtitle: "Customer Happiness",
+    description: "Always smiling, always helpful — ensures every guest leaves with a full belly and a happy heart.",
+    bgColor: "bg-teal-500",
+    textColor: "text-yellow-100",
+    image: Kadir
+  }
+];
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-teal-300 text-center px-4">
-      
-      <h2 className="mb-4 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight text-red-500">
-        Meet the Team!
-      </h2>
+    <div className="min-h-screen bg-yellow-100 p-8">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="mb-6 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-relaxed tracking-wide text-orange-600 font-headline text-right">
+  MEET OUR <br />
+  TEAM
+</h1>
 
-      <p className="mb-8 text-lg md:text-xl text-gray-700 max-w-xl">
-        From Mexico to Europe
-      </p>
 
-      <img
-        src={TeamFoto}
-        alt="Our Team"
-        className="w-64 md:w-96 lg:w-[500px] mb-8"
-      />
-
-      {/* Team Members */}
-      <div className="flex flex-wrap justify-center gap-6">
-        <ProfileCard
-          name="Doña Aby"
-          title="Founder & Taco Expert"
-          image={AbyPortrait}
-        />
+<div className="flex flex-wrap justify-center gap-10">
+  {teamMembers.map((member, index) => (
+    <ProfileCard
+      key={index}
+      title={member.title}
+      subtitle={member.subtitle}
+      description={member.description}
+      bgColor={member.bgColor}
+      textColor={member.textColor}
+      image={member.image}
+    />
+  ))}
+</div>
       </div>
     </div>
   );
 }
 
-export default Team;
+export default TeamGrid;

@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import logo from '../../assets/img/LogoRemoved.png';
+
+
 
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -45,11 +48,14 @@ function Navbar() {
                 TEAM
               </a>
             </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors">
-                MENU
-              </a>
-            </li>
+          <li>
+  <Link
+    to="/menu"
+    className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors"
+  >
+    MENU
+  </Link>
+</li>
             <li>
               <a href="#" className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors">
                 CONTACT

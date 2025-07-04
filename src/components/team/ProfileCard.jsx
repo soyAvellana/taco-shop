@@ -1,34 +1,28 @@
-import LocalBeerImage from '../../assets/img/Aby_Potrait.png';
-
-function ProfileCard() {
+function ProfileCard({ title, subtitle, description, bgColor, textColor, image }) {
   return (
-    <div className="bg-lime-200 rounded-3xl p-8 max-w-md mx-auto relative overflow-hidden">
+    <div className={`${bgColor} ${textColor} font-body rounded-3xl p-8 h-[460px] w-80 flex flex-col justify-between relative overflow-hidden transform hover:scale-105 transition-transform duration-300`}>
       
-      {/* Text Content */}
-      <div className="relative z-10">
-        <h1 className="text-blue-800 font-black text-4xl leading-tight mb-6">
-          DOÑA<br />ABY
-        </h1>
+      <div className="z-10">
         
-        <p className="text-blue-800 text-xl font-medium">
-          from<br />
-          Hendersons<br />
-          Brewing
-        </p>
-      </div>
+        {/* Titel */}
+        <h2 className="text-3xl font-black mb-2 leading-tight">{title}</h2>
+        
+        {/* Untertitel fett */}
+        <div className="text-lg font-medium opacity-90">
+          {subtitle && <div className="mb-2 font-bold">{subtitle}</div>}
+          {description && <div>{description}</div>}
+        </div>
       
-      {/* Image Container */}
-      <div className="absolute -bottom-4 -right-4 w-64 h-64 rounded-full overflow-hidden bg-orange-200">
+      </div>
+
+      {/* Bild */}
+      <div className="absolute bottom-4 right-4 w-36 h-50 rounded-full overflow-hidden shadow-lg">
         <img 
-          src={LocalBeerImage}
-          alt="Person holding a beer can"
+          src={image} 
+          alt={title}
           className="w-full h-full object-cover"
         />
       </div>
-      
-      {/* Decorative Elements */}
-      <div className="absolute top-4 right-4 w-8 h-8 bg-blue-800 rounded-full opacity-20"></div>
-      <div className="absolute bottom-20 left-4 w-4 h-4 bg-blue-800 rounded-full opacity-30"></div>
     </div>
   );
 }
