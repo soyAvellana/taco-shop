@@ -1,12 +1,12 @@
 import TeamFoto from '../../assets/img/TeamfotoTransparent.png';
 import AbyPortrait from '../../assets/img/Aby_Potrait.png';
-import { ProfileCard } from './ProfileCard';
+import ProfileCard from './ProfileCard';
 
 function Team() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-teal-300 text-center px-4">
       
-      <h2 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-red-500 md:text-6xl lg:text-7xl">
+      <h2 className="mb-4 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight text-red-500">
         Meet the Team!
       </h2>
 
@@ -22,39 +22,12 @@ function Team() {
 
       {/* Team Members */}
       <div className="flex flex-wrap justify-center gap-6">
-        
         <ProfileCard
           name="Doña Aby"
           title="Founder & Taco Expert"
           image={AbyPortrait}
         />
-
-        <ProfileCard
-          name="Carlos Rivera"
-          title="Head of Operations"
-          image="/assets/img/carlos-profile.png"
-        />
-
-        <ProfileCard
-          name="Maria Gomez"
-          title="Creative Director"
-          image="/assets/img/maria-profile.png"
-        />
-
-        <ProfileCard
-          name="Carlos Rivera"
-          title="Head of Operations"
-          image="/assets/img/carlos-profile.png"
-        />
-
-        <ProfileCard
-          name="Maria Gomez"
-          title="Creative Director"
-          image="/assets/img/maria-profile.png"
-        />
-
       </div>
-      
     </div>
   );
 }

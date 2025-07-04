@@ -1,29 +1,35 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-} from "@material-tailwind/react";
+import LocalBeerImage from '../../assets/img/Aby_Potrait.png';
 
-export function ProfileCard({ name, title, image }) {
+function ProfileCard() {
   return (
-    <Card className="w-64 shadow-lg">
-      <CardHeader floated={false} className="h-40">
-        <img
-          src={image}
-          alt={`${name} profile`}
-          className="object-contain w-full h-full"
+    <div className="bg-lime-200 rounded-3xl p-8 max-w-md mx-auto relative overflow-hidden">
+      
+      {/* Text Content */}
+      <div className="relative z-10">
+        <h1 className="text-blue-800 font-black text-4xl leading-tight mb-6">
+          DOÑA<br />ABY
+        </h1>
+        
+        <p className="text-blue-800 text-xl font-medium">
+          from<br />
+          Hendersons<br />
+          Brewing
+        </p>
+      </div>
+      
+      {/* Image Container */}
+      <div className="absolute -bottom-4 -right-4 w-64 h-64 rounded-full overflow-hidden bg-orange-200">
+        <img 
+          src={LocalBeerImage}
+          alt="Person holding a beer can"
+          className="w-full h-full object-cover"
         />
-      </CardHeader>
-      <CardBody className="text-center">
-        <Typography variant="h5" color="blue-gray" className="mb-2">
-          {name}
-        </Typography>
-        <Typography color="blue-gray" className="font-medium text-sm" textGradient>
-          {title}
-        </Typography>
-      </CardBody>
-    </Card>
+      </div>
+      
+      {/* Decorative Elements */}
+      <div className="absolute top-4 right-4 w-8 h-8 bg-blue-800 rounded-full opacity-20"></div>
+      <div className="absolute bottom-20 left-4 w-4 h-4 bg-blue-800 rounded-full opacity-30"></div>
+    </div>
   );
 }
 

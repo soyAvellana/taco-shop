@@ -1,8 +1,13 @@
 module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class', 
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        headline: ['Ranchers', 'cursive'],
+        body: ['Lato', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
