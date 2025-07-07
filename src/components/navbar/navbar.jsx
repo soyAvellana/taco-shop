@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import logo from '../../assets/img/LogoRemoved.png';
 
-
-
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,46 +16,49 @@ function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="bg-pink-400 border-gray-200 dark:bg-gray-900 shadow-lg">
+    <nav className="bg-pink-300 border-black dark:bg-gray-900 shadow-lg">
       <div className="flex items-center justify-between w-full px-8 py-6">
 
         {/* Logo */}
         <a href="/" className="flex items-center space-x-4 rtl:space-x-reverse">
           <img src={logo} className="h-24" alt="Taco Shop Logo" />
-        
         </a>
 
         {/* Navigation + Dark Mode + Burger Menü */}
         <div className="flex items-center space-x-6">
 
           {/* Navigation Links */}
-         <ul className="hidden md:flex font-extrabold flex-row space-x-10 rtl:space-x-reverse font-body text-lg">
-
+          <ul className="hidden md:flex font-extrabold flex-row space-x-10 rtl:space-x-reverse font-body text-lg">
             <li>
-              <a href="#" className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors">
+              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
                 HOME
               </a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors">
+              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
                 ABOUT
               </a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors">
+              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
                 TEAM
               </a>
             </li>
-          <li>
-  <Link
-    to="/menu"
-    className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors"
-  >
-    MENU
-  </Link>
-</li>
             <li>
-              <a href="#" className="block py-2 px-3 text-orange-600 dark:text-white hover:text-white hover:underline transition-colors">
+              <Link
+                to="/menu"
+                className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors"
+              >
+                MENU
+              </Link>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+                ORDER
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
                 CONTACT
               </a>
             </li>
@@ -101,11 +102,12 @@ function Navbar() {
       {/* Mobile Menü */}
       <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`} id="navbar-default">
         <ul className="font-medium flex flex-col p-6 space-y-4 border-t border-gray-200 bg-pink-300 dark:bg-gray-800 dark:border-gray-700 text-lg font-body">
-          <li><a href="#" className="block text-gray-900 dark:text-white hover:text-white hover:underline transition-colors">Home</a></li>
-          <li><a href="#" className="block text-gray-900 dark:text-white hover:text-white hover:underline transition-colors">About</a></li>
-          <li><a href="#" className="block text-gray-900 dark:text-white hover:text-white hover:underline transition-colors">Team</a></li>
-          <li><a href="#" className="block text-gray-900 dark:text-white hover:text-white hover:underline transition-colors">Menu</a></li>
-          <li><a href="#" className="block text-gray-900 dark:text-white hover:text-white hover:underline transition-colors">Contact</a></li>
+          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">HOME</a></li>
+          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">ABOUT</a></li>
+          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">TEAM</a></li>
+          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">MENU</a></li>
+          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">ORDER</a></li>
+          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">CONTACT</a></li>
         </ul>
       </div>
     </nav>
