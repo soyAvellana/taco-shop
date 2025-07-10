@@ -71,7 +71,8 @@ const menuData = {
     { id: "mains", name: "Mains" },
     { id: "starters", name: "Starters" },
     { id: "desserts", name: "Desserts" },
-    { id: "drinks", name: "Drinks" },
+    { id: "drinks", name: "Non-Alcoholic Drinks" },
+
   ];
 
   return (

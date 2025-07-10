@@ -31,6 +31,7 @@ root.render(
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -27,42 +27,39 @@ function Navbar() {
         {/* Navigation + Dark Mode + Burger Menü */}
         <div className="flex items-center space-x-6">
 
-          {/* Navigation Links */}
-          <ul className="hidden md:flex font-extrabold flex-row space-x-10 rtl:space-x-reverse font-body text-lg">
-            <li>
-              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-                HOME
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-                ABOUT
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-                TEAM
-              </a>
-            </li>
-            <li>
-              <Link
-                to="/menu"
-                className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors"
-              >
-                MENU
-              </Link>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-                ORDER
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-                CONTACT
-              </a>
-            </li>
-          </ul>
+<ul className="hidden md:flex font-extrabold flex-row space-x-10 rtl:space-x-reverse font-body text-lg">
+  <li>
+    <Link to="/" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+      HOME
+    </Link>
+  </li>
+  <li>
+    <Link to="/about" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+      ABOUT
+    </Link>
+  </li>
+  <li>
+    <Link to="/team" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+      TEAM
+    </Link>
+  </li>
+  <li>
+    <Link to="/menu" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+      MENU
+    </Link>
+  </li>
+  <li>
+    <Link to="/order" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+      ORDER
+    </Link>
+  </li>
+  <li>
+    <Link to="/contact" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+      CONTACT
+    </Link>
+  </li>
+</ul>
+
 
           {/* Dark Mode Umschalter */}
           <button
