@@ -9,29 +9,26 @@ import cactus from '../../assets/img/Cactus.png';
           COME FOR THE HEAT,<br /> STAY FOR THE CHILL
         </h1>
        <div className="flex justify-center mb-12">
-        <img src={bar} alt="Bar with Alcohol" className="w-72 md:w-96" />
+        <img src={bar} loading="lazy"  alt="Bar with Alcohol" className="w-72 md:w-96" />
       </div>
       </div>
       
 
-      {/* Adresse / Öffnungszeiten */}
       <div className="text-center text-gray-700 text-lg md:text-xl mb-16 space-y-3">
-        <p><strong>Address:</strong> Sunset Street 123, 98765 Cocktail City</p>
+        <p><strong>Address:</strong> Taco Street 123, 11201 Brooklyn, NY</p>
         <p><strong>Phone:</strong> +49 123 456789</p>
         <p><strong>Email:</strong> hello@yourbar.com</p>
         <p><strong>Opening Hours:</strong><br />Mon - Sat: 11 AM – 10 PM<br />Sun: 12 PM – 8 PM</p>
       </div>
 
-  <div className="flex justify-center mb-12">
-        <img src={cactus} alt="Happy cactus" className="w-72 md:w-96" />
-      </div>
-      {/* Überschrift Kontaktformular */}
+  
+  
       <div className="text-center mb-10">
         <h2 className="text-3xl font-semibold text-gray-900">Stay in Contact with us</h2>
         <p className="mt-2 text-lg text-gray-600">Send us a message — we’ll get back to you soon!</p>
       </div>
 
-      {/* Kontaktformular */}
+   
       <form action="#" method="POST" className="mx-auto max-w-2xl">
         <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <div>
@@ -90,7 +87,7 @@ import cactus from '../../assets/img/Cactus.png';
           <button
             type="submit"
             className="w-full rounded-md bg-amber-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus:outline focus:ring-2 focus:ring-amber-500"
-          >
+            aria-label="Send Message">
             Send Message
           </button>
         </div>

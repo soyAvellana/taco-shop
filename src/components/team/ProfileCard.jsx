@@ -4,10 +4,10 @@ function ProfileCard({ title, subtitle, description, bgColor, textColor, image }
       
       <div className="z-10">
         
-        {/* Titel */}
+    
         <h2 className="text-3xl font-black mb-2 leading-tight">{title}</h2>
         
-        {/* Untertitel fett */}
+    
         <div className="text-lg font-medium opacity-90">
           {subtitle && <div className="mb-2 font-bold">{subtitle}</div>}
           {description && <div>{description}</div>}
@@ -15,11 +15,12 @@ function ProfileCard({ title, subtitle, description, bgColor, textColor, image }
       
       </div>
 
-      {/* Bild */}
+
       <div className="absolute bottom-4 right-4 w-36 h-50 rounded-full overflow-hidden shadow-lg">
         <img 
           src={image} 
           alt={title}
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>

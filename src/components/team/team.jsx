@@ -68,6 +68,7 @@ const teamMembers = [
       bgColor={member.bgColor}
       textColor={member.textColor}
       image={member.image}
+      loading="lazy"
     />
   ))}
 </div>

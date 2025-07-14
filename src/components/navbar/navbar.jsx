@@ -19,49 +19,67 @@ function Navbar() {
     <nav className="bg-pink-300 border-black dark:bg-gray-900 shadow-lg">
       <div className="flex items-center justify-between w-full px-8 py-6">
 
-        {/* Logo */}
+
         <a href="/" className="flex items-center space-x-4 rtl:space-x-reverse">
-          <img src={logo} className="h-24" alt="Taco Shop Logo" />
+          <img src={logo} loading="lazy" className="h-24" alt="Taco Shop Logo" />
         </a>
 
-        {/* Navigation + Dark Mode + Burger Menü */}
+   
         <div className="flex items-center space-x-6">
 
-<ul className="hidden md:flex font-extrabold flex-row space-x-10 rtl:space-x-reverse font-body text-lg">
+<ul className="hidden md:flex font-extrabold flex-row space-x-6 font-body text-lg">
   <li>
-    <Link to="/" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+    <Link
+      to="/"
+      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+    >
       HOME
     </Link>
   </li>
   <li>
-    <Link to="/about" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+    <Link
+      to="/about"
+      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+    >
       ABOUT
     </Link>
   </li>
   <li>
-    <Link to="/team" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+    <Link
+      to="/team"
+      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+    >
       TEAM
     </Link>
   </li>
   <li>
-    <Link to="/menu" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+    <Link
+      to="/menu"
+      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+    >
       MENU
     </Link>
   </li>
   <li>
-    <Link to="/order" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+    <Link
+      to="/order"
+      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+    >
       ORDER
     </Link>
   </li>
   <li>
-    <Link to="/contact" className="block py-2 px-3 text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+    <Link
+      to="/contact"
+      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+    >
       CONTACT
     </Link>
   </li>
 </ul>
 
 
-          {/* Dark Mode Umschalter */}
+
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-3 bg-gray-200 dark:bg-gray-700 rounded-full hover:scale-110 transition-transform"
@@ -74,7 +92,7 @@ function Navbar() {
             )}
           </button>
 
-          {/* Burger Menü Button nur für kleine Bildschirme */}
+         
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             type="button"
@@ -96,17 +114,43 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menü */}
-      <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`} id="navbar-default">
-        <ul className="font-medium flex flex-col p-6 space-y-4 border-t border-gray-200 bg-pink-300 dark:bg-gray-800 dark:border-gray-700 text-lg font-body">
-          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">HOME</a></li>
-          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">ABOUT</a></li>
-          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">TEAM</a></li>
-          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">MENU</a></li>
-          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">ORDER</a></li>
-          <li><a href="#" className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">CONTACT</a></li>
-        </ul>
-      </div>
+
+<div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`} id="navbar-default">
+  <ul className="font-medium flex flex-col p-6 space-y-4 border-t border-gray-200 bg-pink-300 dark:bg-gray-800 dark:border-gray-700 text-lg font-body">
+    <li>
+      <Link to="/" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+        HOME
+      </Link>
+    </li>
+    <li>
+      <Link to="/about" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+        ABOUT
+      </Link>
+    </li>
+    <li>
+      <Link to="/team" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+        TEAM
+      </Link>
+    </li>
+    <li>
+      <Link to="/menu" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+        MENU
+      </Link>
+    </li>
+    <li>
+      <Link to="/order" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+        ORDER
+      </Link>
+    </li>
+    <li>
+      <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
+        CONTACT
+      </Link>
+    </li>
+  </ul>
+</div>
+    
+    
     </nav>
   );
 }

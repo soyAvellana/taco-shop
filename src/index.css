@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ranchers - Headline Font */
+
 @font-face {
   font-family: 'Ranchers';
   src: url('./assets/fonts/Ranchers-Regular.woff') format('woff');
@@ -10,7 +10,6 @@
   font-style: normal;
 }
 
-/* Lato Regular - Body Font */
 @font-face {
   font-family: 'Lato';
   src: url('./assets/fonts/Lato-Regular.woff') format('woff');
@@ -18,10 +17,13 @@
   font-style: normal;
 }
 
-/* Lato Bold - Body Font Bold */
 @font-face {
   font-family: 'Lato';
   src: url('./assets/fonts/Lato-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+}
+
+html, body, #root {
+  height: 100%;
 }

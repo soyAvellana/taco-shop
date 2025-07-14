@@ -78,14 +78,14 @@ const menuData = {
   return (
     <div className="min-h-screen bg-yellow-50 flex flex-col">
       
-      {/* Category Banner */}
+
       <div className="bg-pink-500 text-red-800 py-12 text-center">
         <h2 className="text-5xl md:text-7xl font-black font-headline mb-2">
           {menuData[activeCategory].title}
         </h2>
       </div>
 
-      {/* Buttons */}
+
       <div className="bg-white shadow-md py-6">
         <div className="max-w-7xl mx-auto flex justify-center gap-4 px-4 flex-wrap">
           {categories.map((cat) => (
@@ -104,14 +104,14 @@ const menuData = {
         </div>
       </div>
 
-      {/* Product Grid */}
+     
       <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {menuData[activeCategory].items.map((item, idx) => (
           <div
             key={idx}
             className="bg-white border border-orange-200 rounded-3xl p-8 shadow-md hover:shadow-xl hover:scale-105 transition-all flex flex-col justify-between"
           >
-            <img src={item.image} alt={item.name} className="w-32 h-32 mx-auto mb-4 object-contain" />
+            <img src={item.image} loading="lazy" alt={item.name} className="w-32 h-32 mx-auto mb-4 object-contain" />
             <h3 className="text-2xl font-black text-red-500 font-headline mb-2">{item.name}</h3>
             <p className="text-gray-700 mb-4">{item.description}</p>
             
@@ -120,7 +120,7 @@ const menuData = {
               {item.spicy > 0 && (
                 <div className="flex gap-1">
                   {Array.from({ length: item.spicy }).map((_, i) => (
-                    <img key={i} src={ChiliImg} alt="Spicy Level" className="w-5 h-5 inline-block" />
+                    <img key={i} src={ChiliImg} loading="lazy" alt="Spicy Level" className="w-5 h-5 inline-block" />
                   ))}
                 </div>
               )}

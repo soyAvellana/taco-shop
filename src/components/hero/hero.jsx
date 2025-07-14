@@ -24,7 +24,7 @@ function Hero() {
     
       <div className="w-72 md:w-[400px] lg:w-[600px]">
         <img
-          src={TacoImage}
+          src={TacoImage} loading="lazy" 
           alt="Delicious tacos"
           className="w-full"
         />
