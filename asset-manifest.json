@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taco-shop/static/css/main.7ed72dbc.css",
-    "main.js": "/taco-shop/static/js/main.5447964b.js",
+    "main.css": "/taco-shop/static/css/main.386e7d53.css",
+    "main.js": "/taco-shop/static/js/main.1ad91fbe.js",
     "static/media/Tamales.png": "/taco-shop/static/media/Tamales.72d53b37f9ecaf2c7224.png",
     "static/media/Bohnenmus.png": "/taco-shop/static/media/Bohnenmus.caa3980daa8eef94ce0a.png",
     "static/media/Salsa_Dip.png": "/taco-shop/static/media/Salsa_Dip.9ae52f82c1911856dece.png",
@@ -30,17 +30,18 @@
     "static/media/Kadir_Portrait.png": "/taco-shop/static/media/Kadir_Portrait.094c1c6566d80ababb4c.png",
     "static/media/Lisa_Portrait.png": "/taco-shop/static/media/Lisa_Portrait.00c2cf057917d0bab035.png",
     "static/media/Juan_Portrait.png": "/taco-shop/static/media/Juan_Portrait.3209718e7b55991cdfcf.png",
+    "static/media/delivery_guy.png": "/taco-shop/static/media/delivery_guy.fef6971902f363f43265.png",
     "static/media/Aby_Potrait.png": "/taco-shop/static/media/Aby_Potrait.a6b63d8fab3f94f56827.png",
     "static/media/Ranchers-Regular.woff": "/taco-shop/static/media/Ranchers-Regular.d60f1c742efdb8a64c06.woff",
     "static/media/Aykut_Portrait.png": "/taco-shop/static/media/Aykut_Portrait.4a239f8445fdc1896e79.png",
     "static/media/Lato-Regular.woff": "/taco-shop/static/media/Lato-Regular.2fc7f4d10ffe3f2e9713.woff",
     "static/media/Lato-Bold.woff": "/taco-shop/static/media/Lato-Bold.039f0d81a8152830d40b.woff",
     "index.html": "/taco-shop/index.html",
-    "main.7ed72dbc.css.map": "/taco-shop/static/css/main.7ed72dbc.css.map",
-    "main.5447964b.js.map": "/taco-shop/static/js/main.5447964b.js.map"
+    "main.386e7d53.css.map": "/taco-shop/static/css/main.386e7d53.css.map",
+    "main.1ad91fbe.js.map": "/taco-shop/static/js/main.1ad91fbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ed72dbc.css",
-    "static/js/main.5447964b.js"
+    "static/css/main.386e7d53.css",
+    "static/js/main.1ad91fbe.js"
   ]
 }
