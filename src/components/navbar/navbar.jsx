@@ -16,8 +16,8 @@ function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="bg-pink-300 border-black dark:bg-gray-900 shadow-lg">
-      <div className="flex items-center justify-between w-full px-8 py-6">
+   <nav className="bg-[#F96CA2] border-black dark:bg-gray-900 shadow-lg">
+  <div className="flex items-center justify-between w-full px-8 py-6">
 
 
         <a href="/" className="flex items-center space-x-4 rtl:space-x-reverse">
@@ -31,7 +31,8 @@ function Navbar() {
   <li>
     <Link
       to="/"
-      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+className="block py-2.5 px-5 rounded-xl text-[#FDE6C2] bg-transparent hover:bg-[#FFECE2] hover:text-[#B42E58] transition-all duration-200 ease-in-out font-medium tracking-wide shadow-sm hover:shadow-md"
+
     >
       HOME
     </Link>
@@ -39,7 +40,7 @@ function Navbar() {
   <li>
     <Link
       to="/about"
-      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+className="block py-2.5 px-5 rounded-xl text-[#FDE6C2] bg-transparent hover:bg-[#FFECE2] hover:text-[#B42E58] transition-all duration-200 ease-in-out font-medium tracking-wide shadow-sm hover:shadow-md"
     >
       ABOUT
     </Link>
@@ -47,7 +48,7 @@ function Navbar() {
   <li>
     <Link
       to="/team"
-      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+className="block py-2.5 px-5 rounded-xl text-[#FDE6C2] bg-transparent hover:bg-[#FFECE2] hover:text-[#B42E58] transition-all duration-200 ease-in-out font-medium tracking-wide shadow-sm hover:shadow-md"
     >
       TEAM
     </Link>
@@ -55,7 +56,7 @@ function Navbar() {
   <li>
     <Link
       to="/menu"
-      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+className="block py-2.5 px-5 rounded-xl text-[#FDE6C2] bg-transparent hover:bg-[#FFECE2] hover:text-[#B42E58] transition-all duration-200 ease-in-out font-medium tracking-wide shadow-sm hover:shadow-md"
     >
       MENU
     </Link>
@@ -63,7 +64,7 @@ function Navbar() {
   <li>
     <Link
       to="/order"
-      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+className="block py-2.5 px-5 rounded-xl text-[#FDE6C2] bg-transparent hover:bg-[#FFECE2] hover:text-[#B42E58] transition-all duration-200 ease-in-out font-medium tracking-wide shadow-sm hover:shadow-md"
     >
       ORDER
     </Link>
@@ -71,7 +72,7 @@ function Navbar() {
   <li>
     <Link
       to="/contact"
-      className="block py-2 px-4 rounded-md text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-gray-700 hover:text-red-900 transition-colors"
+className="block py-2.5 px-5 rounded-xl text-[#FDE6C2] bg-transparent hover:bg-[#FFECE2] hover:text-[#B42E58] transition-all duration-200 ease-in-out font-medium tracking-wide shadow-sm hover:shadow-md"
     >
       CONTACT
     </Link>

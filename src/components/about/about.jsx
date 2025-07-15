@@ -12,7 +12,7 @@ function About() {
 </h1>
 
 <p className="mb-8 text-xl md:text-2xl text-gray-700 font-body leading-relaxed">
-  We’re not just about tacos — we’re about bringing people together with good food and good energy. 
+  We’re not just about tacos — we’re about bringing people together with <strong>good food and good energy. </strong>
   <br></br>From sizzling quesadillas to juicy burritos, everything we serve is handmade with love and a little extra spice.
 </p>
 

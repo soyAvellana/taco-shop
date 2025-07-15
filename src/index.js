@@ -10,6 +10,7 @@ import About from './components/about/about.jsx';
 import Team from './components/team/team.jsx';
 import Menu from './components/menu/menu.jsx';
 import Contact from './components/contact/contact.jsx';
+import Order from './components/order/order.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -29,6 +30,7 @@ root.render(
           <Route path="team" element={<Team />} />
           <Route path="menu" element={<Menu />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="order" element={<Order />} />
         </Route>
       </Routes>
     </HashRouter>
