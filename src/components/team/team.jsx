@@ -50,7 +50,7 @@ const teamMembers = [
 ];
 
   return (
-    <div className="min-h-screen bg-yellow-100 p-8">
+    <div className="min-h-screen bg-[#fffbb6] p-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="mb-6 text-4xl md:text-6xl lg:text-7xl font-extrabold leading-relaxed tracking-wide text-orange-600 font-headline text-right">
   MEET OUR <br />
@@ -70,7 +70,9 @@ const teamMembers = [
       image={member.image}
       loading="lazy"
     />
+
   ))}
+  
 </div>
       </div>
     </div>

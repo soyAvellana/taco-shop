@@ -2,7 +2,7 @@ import TacoImage from '../../assets/img/TacoSetTransparent.png';
 
 function Hero() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-start min-h-[100vh] bg-[rgb(155,230,247)] px-6 md:px-40 pt-20 pb-12 text-center md:text-left">
+    <div className="flex flex-col md:flex-row items-center justify-start min-h-[100vh] bg-[rgb(160,247,255)] px-6 md:px-40 pt-20 pb-12 text-center md:text-left">
       
       <div className="max-w-xl mb-12 md:mb-0 md:mr-8">
         <h1 className="mb-8 text-3xl md:text-5xl lg:text-6xl font-extrabold leading-loose tracking-wide text-red-500 font-headline">

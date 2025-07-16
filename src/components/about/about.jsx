@@ -2,7 +2,7 @@ import TeamImage from '../../assets/img/TeamfotoTransparent.png';
 
 function About() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] bg-amber-200 px-4 md:px-12 pt-20 pb-12 text-center md:text-left">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] bg-[rgb(250,222,129)] px-4 md:px-12 pt-20 pb-12 text-center md:text-left">
       
       <div className="max-w-xl mb-12 md:mb-0 md:mr-8">
         

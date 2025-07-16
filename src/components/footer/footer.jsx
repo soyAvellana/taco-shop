@@ -1,9 +1,10 @@
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { Link } from "react-router-dom"; // wichtig für interne Navigation
 import logo from "../../assets/img/LogoRemoved.png";
 
 function Footer() {
   return (
-    <footer className="bg-[#ff8dc2] text-[#5c4622] py-12">
+    <footer className="bg-[#ff8dc2] text-[#7a1538] py-12">
       <div className="max-w-6xl mx-auto px-4 flex flex-col items-center text-center space-y-8">
 
         <div className="w-[260px] md:w-[320px] aspect-[5/2] relative">
@@ -15,13 +16,28 @@ function Footer() {
           />
         </div>
 
+        {/* Navigation Links */}
         <div className="flex flex-wrap justify-center items-center gap-6 text-[1.25rem] font-semibold">
-          <a href="#" className="hover:underline">About</a>
-          <a href="#" className="hover:underline">Order</a>
-          <a href="#" className="hover:underline">Menu</a>
-          <a href="#" className="hover:underline">Contact</a>
-          <a href="#" className="hover:text-white text-2xl"><FaFacebookF /></a>
-          <a href="#" className="hover:text-white text-2xl"><FaInstagram /></a>
+          <Link to="/about" className="hover:underline">About</Link>
+          <Link to="/order" className="hover:underline">Order</Link>
+          <Link to="/menu" className="hover:underline">Menu</Link>
+          <Link to="/contact" className="hover:underline">Contact</Link>
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white text-2xl"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://www.instagram.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white text-2xl"
+          >
+            <FaInstagram />
+          </a>
         </div>
 
         {/* Adresse & Copyright */}
