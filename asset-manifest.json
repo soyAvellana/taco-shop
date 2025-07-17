@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taco-shop/static/css/main.b97752a1.css",
-    "main.js": "/taco-shop/static/js/main.1f16805e.js",
+    "main.js": "/taco-shop/static/js/main.09068c49.js",
     "static/media/Tamales.png": "/taco-shop/static/media/Tamales.72d53b37f9ecaf2c7224.png",
     "static/media/Bohnenmus.png": "/taco-shop/static/media/Bohnenmus.caa3980daa8eef94ce0a.png",
     "static/media/Salsa_Dip.png": "/taco-shop/static/media/Salsa_Dip.9ae52f82c1911856dece.png",
@@ -38,10 +38,10 @@
     "static/media/Lato-Bold.woff": "/taco-shop/static/media/Lato-Bold.039f0d81a8152830d40b.woff",
     "index.html": "/taco-shop/index.html",
     "main.b97752a1.css.map": "/taco-shop/static/css/main.b97752a1.css.map",
-    "main.1f16805e.js.map": "/taco-shop/static/js/main.1f16805e.js.map"
+    "main.09068c49.js.map": "/taco-shop/static/js/main.09068c49.js.map"
   },
   "entrypoints": [
     "static/css/main.b97752a1.css",
-    "static/js/main.1f16805e.js"
+    "static/js/main.09068c49.js"
   ]
 }
