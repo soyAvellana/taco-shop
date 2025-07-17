@@ -10,7 +10,7 @@ function Order() {
       title: 'PICK UP',
       description: 'Fast & Fresh',
       icon: '🏪',
-      bgColor: 'bg-emerald-500',
+      bgColor: 'bg-[#56b75e]',
       buttonBg: 'bg-white',
       buttonText: 'text-emerald-700',
     },
@@ -19,7 +19,7 @@ function Order() {
       title: 'DELIVERY',
       description: 'To Your Door',
       icon: '🚚',
-      bgColor: 'bg-orange-500',
+      bgColor: 'bg-[#f28500]',
       buttonBg: 'bg-white',
       buttonText: 'text-orange-700',
     }

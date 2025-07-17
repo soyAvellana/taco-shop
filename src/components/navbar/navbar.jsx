@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import logo from '../../assets/img/LogoRemoved.png';
 
+
+
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,9 +22,9 @@ function Navbar() {
   <div className="flex items-center justify-between w-full px-8 py-6">
 
 
-        <a href="/" className="flex items-center space-x-4 rtl:space-x-reverse">
-          <img src={logo} loading="lazy" className="h-24" alt="Taco Shop Logo" />
-        </a>
+  <Link to="/" className="flex items-center space-x-4 rtl:space-x-reverse">
+  <img src={logo} loading="lazy" className="h-24" alt="Taco Shop Logo" />
+</Link>
 
    
         <div className="flex items-center space-x-6">
