@@ -1,4 +1,6 @@
 import TacoImage from '../../assets/img/TacoSetTransparent.png';
+import { Link } from 'react-router-dom';
+
 
 function Hero() {
   return (
@@ -11,9 +13,13 @@ function Hero() {
           <div>TACOS, QUESADILLAS, BURRITOS Y MÁS...</div>
         </h1>
 
-        <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-xl px-8 py-4 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
-          ORDER HERE
-        </button>
+        <Link
+      to="/order"
+      className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-xl px-8 py-4 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 inline-block text-center"
+        >
+      ORDER HERE
+      </Link>
+      
       </div>
 
       <div className="w-72 md:w-[400px] lg:w-[600px]">

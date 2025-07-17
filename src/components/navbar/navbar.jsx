@@ -116,42 +116,35 @@ className="block py-2.5 px-5 rounded-xl text-[#FDE6C2] bg-transparent hover:bg-[
       </div>
 
 
-<div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`} id="navbar-default">
-  <ul className="font-medium flex flex-col p-6 space-y-4 border-t border-gray-200 bg-pink-300 dark:bg-gray-800 dark:border-gray-700 text-lg font-body">
-    <li>
-      <Link to="/" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-        HOME
-      </Link>
-    </li>
-    <li>
-      <Link to="/about" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-        ABOUT
-      </Link>
-    </li>
-    <li>
-      <Link to="/team" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-        TEAM
-      </Link>
-    </li>
-    <li>
-      <Link to="/menu" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-        MENU
-      </Link>
-    </li>
-    <li>
-      <Link to="/order" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-        ORDER
-      </Link>
-    </li>
-    <li>
-      <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-red-700 dark:text-white hover:text-red-900 hover:underline transition-colors">
-        CONTACT
-      </Link>
-    </li>
+<div
+  className={`md:hidden transition-all duration-300 ease-in-out transform overflow-hidden ${
+    menuOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+  }`}
+  id="navbar-default"
+>
+  <ul className="flex flex-col px-6 py-8 space-y-4 bg-[#FDE6C2] dark:bg-gray-800 rounded-b-3xl shadow-lg font-body text-xl font-semibold text-center">
+    {[
+      { path: '/', label: 'HOME' },
+      { path: '/about', label: 'ABOUT' },
+      { path: '/team', label: 'TEAM' },
+      { path: '/menu', label: 'MENU' },
+      { path: '/order', label: 'ORDER' },
+      { path: '/contact', label: 'CONTACT' },
+    ].map(({ path, label }) => (
+     
+     <li key={label}>
+        <Link
+          to={path}
+          onClick={() => setMenuOpen(false)}
+          className="block w-full py-3 rounded-xl text-[#B42E58] bg-white dark:bg-gray-700 dark:text-white hover:bg-[#FFECE2] dark:hover:bg-gray-600 transition-all duration-200 shadow-md"
+        >
+          {label}
+        </Link>
+      </li>
+    ))}
   </ul>
 </div>
-    
-    
+
     </nav>
   );
 }
